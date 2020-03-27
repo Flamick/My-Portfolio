@@ -1,0 +1,15 @@
+$main-color: #333;
+$secondary-color: #6da4bf;
+$light-color: #f4f4f4;
+$medium-color: #444;
+$dark-color: #333;
+$bg-image: url(../img/bg_image.jpg);
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

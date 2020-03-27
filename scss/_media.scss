@@ -1,0 +1,430 @@
+// Min width for home page icons to function
+// Tablet display
+@media (max-width: 912px) {
+  #home {
+    &-b {
+      height: 980px !important;
+
+      .btn-describe-mobile {
+        visibility: visible !important;
+        padding-bottom: 1rem;
+      }
+
+      .btn-describe {
+        visibility: hidden;
+      }
+
+      .process {
+        height: 660px !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-areas:
+          "icon-1 icon-2"
+          "icon-3 icon-4" !important;
+
+        #icon-1 {
+          grid-area: icon-1;
+        }
+        #icon-2 {
+          grid-area: icon-2;
+        }
+        #icon-3 {
+          grid-area: icon-3;
+        }
+        #icon-4 {
+          grid-area: icon-4;
+        }
+
+        h3 {
+          max-width: 150px;
+          margin: 0 auto;
+        }
+
+        &-icon {
+          &:hover {
+            #effect-1 {
+              visibility: visible;
+              transform: translateY(-82px) !important;
+            }
+            #effect-2 {
+              visibility: visible;
+              transform: translateY(-86px) !important;
+            }
+            #effect-3 {
+              visibility: visible;
+              transform: translateY(-86px) !important;
+            }
+            #effect-4 {
+              visibility: visible;
+              transform: translateY(-78px) !important;
+            }
+            .close-mobile {
+              opacity: 1;
+              transition-delay: 1ms;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #work {
+    &-a {
+      min-height: 85vh !important;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 140px !important;
+    padding: 0.25rem 0 !important;
+    justify-content: center !important;
+
+    ul {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+      margin-top: 0.7rem;
+
+      li a {
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+      }
+    }
+  }
+
+  & .logo {
+    font-size: 1.4rem !important;
+
+    #span1 {
+      font-size: 1rem !important;
+    }
+  }
+
+  #header {
+    &-home {
+      display: none;
+    }
+  }
+
+  #home {
+    &-b {
+      height: 1610px !important;
+
+      .btn-describe-mobile {
+        visibility: visible !important;
+        padding-bottom: 1rem;
+      }
+
+      .btn-describe {
+        visibility: hidden;
+      }
+
+      .lead {
+        margin-bottom: 0;
+      }
+
+      .outer-box {
+        margin-top: 0 !important;
+      }
+
+      .process {
+        height: 1220px !important;
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+          "icon-1"
+          "icon-2"
+          "icon-3"
+          "icon-4" !important;
+        grid-gap: 0 !important;
+
+        #icon-1 {
+          grid-area: icon-1;
+        }
+        #icon-2 {
+          grid-area: icon-2;
+        }
+        #icon-3 {
+          grid-area: icon-3;
+        }
+        #icon-4 {
+          grid-area: icon-4;
+        }
+
+        h3 {
+          max-width: 150px;
+          margin: 0 auto;
+        }
+
+        &-icon {
+          &:hover {
+            border-radius: 5px;
+            z-index: 3;
+            transform: scale(3) translateY(20px);
+            color: $dark-color;
+            height: 80px !important;
+            width: 100px !important;
+            border: 2px $secondary-color solid;
+
+            #effect-1 {
+              visibility: visible;
+              transform: translateY(-84px) !important;
+            }
+            #effect-2 {
+              visibility: visible;
+              transform: translateY(-84px) !important;
+            }
+            #effect-3 {
+              visibility: visible;
+              transform: translateY(-84px) !important;
+            }
+            #effect-4 {
+              visibility: visible;
+              transform: translateY(-80px) !important;
+            }
+            .close-mobile {
+              opacity: 1;
+              transition-delay: 1ms;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    &-c {
+      h3 {
+        padding-top: 2rem;
+        padding-bottom: 0.75rem !important;
+      }
+    }
+  }
+
+  #work {
+    &-a {
+      .items {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message" !important;
+      }
+    }
+
+    &-b {
+      .contact-info {
+        grid-template-columns: 1fr !important;
+
+        div {
+          margin-bottom: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px $medium-color solid;
+
+          &:last-child {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem !important;
+      }
+    }
+  }
+
+  #footer {
+    height: 8rem !important;
+
+    .footer-content {
+      flex-direction: column !important;
+      padding: 1rem !important;
+      height: 7rem !important;
+      text-align: center !important;
+
+      p {
+        margin-bottom: 1rem;
+      }
+      .social {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+// Smaller Smartphones
+@media (max-width: 360px) {
+  #navbar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 130px !important;
+    padding: 0.25rem 0 !important;
+    justify-content: center !important;
+    padding-top: 0 !important;
+
+    ul {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+      margin-top: 0.7rem;
+
+      li a {
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  & .logo {
+    font-size: 1.4rem !important;
+
+    #span1 {
+      font-size: 1rem !important;
+    }
+  }
+
+  #home {
+    &-b {
+      height: 1650px !important;
+
+      .btn-describe-mobile {
+        visibility: visible !important;
+        padding-bottom: 1rem;
+      }
+
+      .btn-describe {
+        visibility: hidden;
+      }
+
+      .lead {
+        margin-bottom: 0;
+      }
+
+      .outer-box {
+        margin-top: 0 !important;
+      }
+
+      .process {
+        height: 1220px !important;
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+          "icon-1"
+          "icon-2"
+          "icon-3"
+          "icon-4" !important;
+        grid-gap: 0 !important;
+
+        #icon-1 {
+          grid-area: icon-1;
+        }
+        #icon-2 {
+          grid-area: icon-2;
+        }
+        #icon-3 {
+          grid-area: icon-3;
+        }
+        #icon-4 {
+          grid-area: icon-4;
+        }
+
+        h3 {
+          max-width: 150px;
+          margin: 0 auto;
+        }
+
+        &-icon {
+          &:hover {
+            border-radius: 5px;
+            z-index: 3;
+            transform: scale(3) translateY(20px);
+            color: $dark-color;
+            height: 90px !important;
+            width: 90px !important;
+            border: 2px $secondary-color solid;
+
+            #effect-1 {
+              visibility: visible;
+              transform: translateY(-80px) !important;
+            }
+            #effect-2 {
+              visibility: visible;
+              transform: translateY(-87px) !important;
+            }
+            #effect-3 {
+              visibility: visible;
+              transform: translateY(-84px) !important;
+            }
+            #effect-4 {
+              visibility: visible;
+              transform: translateY(-80px) !important;
+            }
+            .close-mobile {
+              opacity: 1;
+              transition-delay: 1ms;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    height: 8rem !important;
+
+    .footer-content {
+      flex-direction: column !important;
+      padding: 1rem !important;
+      height: 7rem !important;
+      text-align: center !important;
+
+      p {
+        margin-bottom: 1rem;
+      }
+      .social {
+        margin-left: 0.7rem;
+      }
+    }
+  }
+}
+
+// Navbar Logo Resizing
+@media (max-width: 670px) {
+  #navbar {
+    .logo {
+      font-size: 1.4rem !important;
+      padding-top: 1rem !important;
+
+      #span1 {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+
+@media (max-height: 360px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem !important;
+      }
+    }
+  }
+}

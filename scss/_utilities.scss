@@ -1,0 +1,138 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+// Background colors
+.bg {
+  &-main {
+    background: $main-color;
+    color: set-text-color($main-color);
+  }
+
+  &-secondary {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+
+  &-light {
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+
+  &-medium {
+    background: $medium-color;
+    color: set-text-color($medium-color);
+  }
+
+  &-dark {
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+}
+
+.lead {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Padding verticle
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// Margin verticle
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+// Buttons
+%btn-shared {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: $dark-color;
+    background: $light-color;
+
+    &:hover {
+      color: $light-color;
+      background: $secondary-color;
+    }
+  }
+  &-light {
+    @extend %btn-shared;
+    color: $dark-color;
+    background: $light-color;
+
+    &:hover {
+      color: $light-color;
+      background: $dark-color;
+    }
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: $light-color;
+    background: $dark-color;
+
+    &:hover {
+      background: $secondary-color;
+      color: $dark-color;
+    }
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $secondary-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}

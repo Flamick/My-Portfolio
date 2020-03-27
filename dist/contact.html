@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/90872ef2e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Cameron Beiling | Contact Me</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html"
+        ><h1 class="logo">
+          <span class="logo-color">C<span id="span1">RB</span></span>
+          <span id="span2">Side Coding</span>
+        </h1></a
+      >
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html" class="current">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section A: Contact Form -->
+
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          You can either leave me a message here or go to my links at the very
+          bottom of the page.
+        </p>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="email"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              name="phone"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message"
+            ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-dark">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>crbsidecoding@gmail.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>(330) 921-8719</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>Columbiana OH</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class="bg-secondary py-4">
+      <div class="container">
+        <h1>What Can I Do For You?</h1>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2020. All Rights Reserved</p>
+        <div class="social">
+          <a href="https://twitter.com/CrbSideCoding"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="https://www.facebook.com/CrbSideCoding"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com/crbsidecoding/"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/cameronb93/"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
