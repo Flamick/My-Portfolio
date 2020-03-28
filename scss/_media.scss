@@ -274,10 +274,11 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    height: 130px !important;
+    height: 140px !important;
     padding: 0.25rem 0 !important;
     justify-content: center !important;
     padding-top: 0 !important;
+    padding-bottom: 0.5rem !important;
 
     ul {
       padding-bottom: 0.5rem;
@@ -295,6 +296,7 @@
 
   & .logo {
     font-size: 1.4rem !important;
+    padding-bottom: 0.8rem !important;
 
     #span1 {
       font-size: 1rem !important;
