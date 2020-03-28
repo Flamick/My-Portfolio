@@ -277,16 +277,16 @@
         border: 2px #6da4bf solid; }
         #home-b .process-icon:hover #effect-1 {
           visibility: visible;
-          transform: translateY(-84px) !important; }
+          transform: translateY(-86px) !important; }
         #home-b .process-icon:hover #effect-2 {
           visibility: visible;
-          transform: translateY(-84px) !important; }
+          transform: translateY(-86px) !important; }
         #home-b .process-icon:hover #effect-3 {
           visibility: visible;
-          transform: translateY(-84px) !important; }
+          transform: translateY(-86px) !important; }
         #home-b .process-icon:hover #effect-4 {
           visibility: visible;
-          transform: translateY(-80px) !important; }
+          transform: translateY(-82px) !important; }
         #home-b .process-icon:hover .close-mobile {
           opacity: 1;
           transition-delay: 1ms; }
