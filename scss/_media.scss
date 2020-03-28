@@ -303,7 +303,7 @@
 
   #home {
     &-b {
-      height: 1650px !important;
+      height: 1720px !important;
 
       .btn-describe-mobile {
         visibility: visible !important;
@@ -318,12 +318,17 @@
         margin-bottom: 0;
       }
 
+      .inner-box {
+        top: 70% !important;
+      }
+
       .outer-box {
         margin-top: 0 !important;
+        height: 200px !important;
       }
 
       .process {
-        height: 1220px !important;
+        height: 1290px !important;
         grid-template-columns: 1fr !important;
         grid-template-areas:
           "icon-1"
@@ -354,27 +359,27 @@
           &:hover {
             border-radius: 5px;
             z-index: 3;
-            transform: scale(3) translateY(20px);
+            transform: scale(3) translateY(30px) !important;
             color: $dark-color;
-            height: 90px !important;
+            height: 100px !important;
             width: 90px !important;
             border: 2px $secondary-color solid;
 
             #effect-1 {
               visibility: visible;
-              transform: translateY(-80px) !important;
+              transform: translateY(-76px) !important;
             }
             #effect-2 {
               visibility: visible;
-              transform: translateY(-90px) !important;
+              transform: translateY(-82px) !important;
             }
             #effect-3 {
               visibility: visible;
-              transform: translateY(-84px) !important;
+              transform: translateY(-78px) !important;
             }
             #effect-4 {
               visibility: visible;
-              transform: translateY(-80px) !important;
+              transform: translateY(-74px) !important;
             }
             .close-mobile {
               opacity: 1;
