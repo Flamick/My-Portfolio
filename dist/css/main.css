@@ -189,7 +189,7 @@
     #home-b .process {
       height: 660px !important;
       grid-template-columns: repeat(2, 1fr) !important;
-      grid-template-areas: "icon-1 icon-2" "icon-3 icon-4" !important; }
+      grid-template-areas: "icon-1 icon-2" "icon-3 icon-4" !important; }
       #home-b .process #icon-1 {
         grid-area: icon-1; }
       #home-b .process #icon-2 {
@@ -254,7 +254,7 @@
     #home-b .process {
       height: 1220px !important;
       grid-template-columns: 1fr !important;
-      grid-template-areas: "icon-1" "icon-2" "icon-3" "icon-4" !important;
+      grid-template-areas: "icon-1" "icon-2" "icon-3" "icon-4" !important;
       grid-gap: 0 !important; }
       #home-b .process #icon-1 {
         grid-area: icon-1; }
@@ -296,7 +296,7 @@
   #work-a .items {
     grid-template-columns: 1fr; }
   #contact-a .text-fields {
-    grid-template-areas: "name" "subject" "email" "phone" "message" !important; }
+    grid-template-areas: "name" "subject" "email" "phone" "message" !important; }
   #contact-b .contact-info {
     grid-template-columns: 1fr !important; }
     #contact-b .contact-info div {
@@ -362,7 +362,7 @@
     #home-b .process {
       height: 1290px !important;
       grid-template-columns: 1fr !important;
-      grid-template-areas: "icon-1" "icon-2" "icon-3" "icon-4" !important;
+      grid-template-areas: "icon-1" "icon-2" "icon-3" "icon-4" !important;
       grid-gap: 0 !important; }
       #home-b .process #icon-1 {
         grid-area: icon-1; }
@@ -644,7 +644,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
